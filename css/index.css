@@ -79,9 +79,7 @@ nav{
     justify-content: space-evenly;
     margin-top:5%;
 }
-nav .home{
-    font-weight: bold;
-}
+
 nav a{
     color:#626262;
 }
@@ -153,7 +151,6 @@ button:hover{
 .artists-container{
     display:flex;
     flex-flow: row nowrap;
-    border: 1px solid blue;
     justify-content: center;
     width:80%;
     margin:0 auto;
@@ -164,7 +161,6 @@ button:hover{
     align-items: center;
     justify-content: center;
     text-align:center;
-    border: 1px solid red; 
     margin-bottom: 7%;  
 }
 
