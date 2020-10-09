@@ -228,17 +228,17 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index, string) {
-    return `The artist at index ${index} is ${string}.`
-  }
+function getArtistByIndex(array, x) {
+     return `The artist at index ${index} is ${array.name}.`
+     }
 
-console.log(getArtistByIndex(artists,[0]));
+console.log(getArtistByIndex(artists[0]));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
+function get20s(arr, ){
   /*Your Code Here*/
 }
 

@@ -59,11 +59,8 @@ img {
     height:39rem;	
     object-fit: cover;	
     display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
     margin-left: auto;	
     margin-right: auto;	
-    border-radius: 2%;	
 }	
 img:hover {	
     opacity: 80%;	
@@ -98,8 +95,7 @@ nav span{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    height:50vh;
+    height:70vh;
     margin:3% 0;
     width: 100%
 }
@@ -118,8 +114,7 @@ nav span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    height:50vh;
+    height:70vh;
 }
 
 #title .pic .title-container  h1{
@@ -157,46 +152,69 @@ button:hover{
 /*Artists Section Styles */
 .artists-container{
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
     border: 1px solid blue;
-    justify-content: space-evenly;
+    justify-content: center;
     width:80%;
     margin:0 auto;
 }
 
-.artist{
-    display: flex;
-    flex-flow: wrap row;
-    width:100%;
+.artists-container .column{
+    width:50%;
     align-items: center;
-    justify-content: flex-start;
-    border: 1px solid yellow;
+    justify-content: center;
+    text-align:center;
+    border: 1px solid red; 
+    margin-bottom: 7%;  
+}
+
+.artists-container .column img{
+    width: 100%;
+    border-radius: 1rem;
     height: 40vh;
 }
-.artists-container .artist .column{
-    /* display: flex;
-    flex-flow: nowrap row; */
-    width:100%;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align:center;
-    height: 60vh;
-    border: 1px solid red;
+
+.column .bio-images {
+    padding: 7%;
 }
-.artists-container .artist .column img{
-    width: 100%;
-    height:40vh;
-    margin: 3%;
+
+.bio{
+    font-size: 1.3rem;
 }
+
 /* media query for phone */
 @media(max-width:500px){
     nav{
-        width: 60%;
+        width: 45%; 
     }
-    .title-container div{
+    nav a{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #title{
         width: 100%;
-    }    
-    .title-container hr{
-        width: 90%
+        height: 60vh;
     }
+    #title .pic{
+        width: 100%;
+        height: 60vh;
+    }  
+    
+    .title-container h1{
+        font-size: 4rem;
+    }  
+    div hr{
+        width: 100%
+    }
+    .artists-container{
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .artists-container .column{ 
+        width:60%; 
+    }
+
+
 }
