@@ -14,17 +14,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-/* border: 0;   */
+border: 0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
-*{
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
 html{
     font-size:62.5%;
 }
@@ -32,7 +27,6 @@ body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
-    
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
@@ -45,7 +39,7 @@ h1{
 }
 a {	
     text-decoration: none;	
-    color: #4F4F4F;
+    color: black;
     font-size:2.5rem;	
 }	
 a:hover {	
@@ -59,27 +53,27 @@ img {
     height:39rem;	
     object-fit: cover;	
     display: block;	
+    margin: 2%;	
+    margin-top: 4%;	
     margin-left: auto;	
     margin-right: auto;	
+    border-radius: 2%;	
 }	
 img:hover {	
     opacity: 80%;	
 }	
 
 /*HEADER STYLES */
-
 header{
     display:flex;
     justify-content: center;
 }
-
 nav{
-    width:40%;
+    width:30%;
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     margin-top:5%;
 }
-
 nav a{
     color:#626262;
 }
@@ -88,129 +82,55 @@ nav span{
 
 }
 /*Title Section Styles*/
-#title{
+.title-container{
     display:flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height:70vh;
-    margin:3% 0;
-    width: 100%
 }
-#title .pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+.title-container div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;
-}
-#title .title-container {
-    display: flex;	
+    background-position: center;	
     color: white;	
-    width:70%;
+    width:80%;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:70vh;
+    height:60vh;
+    margin:5% 0;
+}	
+.title-container div:hover {	
+    opacity: 80%;	
+}	
+.title-container hr{
+    width:80%;
 }
-
-#title .pic .title-container  h1{
-    width: 70%;
-    line-height: 1.2;
-    text-align: center;
-}
-
-div hr{
-    width: 85%;
-    color: gray;
-    border-color: lightgray;
-    border-width: 4px;
-    border-radius: 10%;
-    border-bottom: 0;
-    opacity: 40%;
-}
-
-.title-container  button{
+button{
     padding:1% 3%;
     font-size: 1.6rem;
     border-radius:6px;
-    border:1% solid lightgray;
-    box-shadow: 0 1px 1px 1px #626262;
+    border:2px solid #626262;
+    box-shadow: 2px 2px 1px #626262;
     transition: 2s;
-    color: #626262;
 }
 button:hover{
     background-color:#626262;
-    border:2% solid white;
+    border:2px solid white;
     color:white;
     box-shadow: 2px 2px 1px white;
-    opacity: 80%;
 }
 /*Artists Section Styles */
 .artists-container{
     display:flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     width:80%;
     margin:0 auto;
 }
 
-.artists-container .column{
-    width:50%;
-    align-items: center;
-    justify-content: center;
+.artist{
+    width:40%;
     text-align:center;
-    margin-bottom: 7%;  
 }
-
-.artists-container .column img{
-    width: 100%;
-    border-radius: 1rem;
-    height: 40vh;
-}
-
-.column .bio-images {
-    padding: 7%;
-}
-
-.bio{
-    font-size: 1.3rem;
-}
-
-/* media query for phone */
-@media(max-width:500px){
-    nav{
-        width: 45%; 
-    }
-    nav a{
-        font-size: 2rem;
-        text-align: center;
-    }
-    #title{
-        width: 100%;
-        height: 60vh;
-    }
-    #title .pic{
-        width: 100%;
-        height: 60vh;
-    }  
-    
-    .title-container h1{
-        font-size: 4rem;
-    }  
-    div hr{
-        width: 100%
-    }
-    .artists-container{
-        flex-flow: column wrap;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .artists-container .column{ 
-        width:60%; 
-    }
-
-
+.artist img{
+    width:100%;
 }
